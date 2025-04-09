@@ -11,7 +11,7 @@
 
 3. переносим содержимое todo в папку app, а саму папку todo удаляем;
 
-4. собираем приложение: `sudo docker compose up`;
+4. собираем приложение: `sudo docker compose up --build`;
 
 5. *костыль, идем в контейнер с backend и выполняем composer install:
 - `sudo docker ps -a`;

@@ -9,9 +9,11 @@
 
 2. клонируем репозиторий: `git clone https://github.com/AngelusCat/todo.git`;
 
-3. собираем приложение: `sudo docker compose up`;
+3. переносим содержимое todo в папку app, а саму папку todo удаляем;
 
-4. *костыль, идем в контейнер с backend и выполняем composer install:
+4. собираем приложение: `sudo docker compose up`;
+
+5. *костыль, идем в контейнер с backend и выполняем composer install:
 - `sudo docker ps -a`;
 - `sudo docker exec -ti <CONTAINER_ID> sh`;
 - `composer install`;
